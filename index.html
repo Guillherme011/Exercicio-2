@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1
+        {
+        font-size: 24pt;
+        background-color: gray;
+        
+     }
+   </style>
+    <h1>Sistema de gestão acadêmica</h1>
+    <h2>Manutenção de usuário do sistema interno</h2> 
+    <form action="manutencao.php" method="get" autocomplete="on"></form>
+    
+    <p>
+        <label for="user">Login:</label>
+        <input type="text" name="user" id="user" minlength="3" maxlength="16">
+    </p>
+    <p>
+        <label for="user">Senha:</label>
+        <input type="password" name="user" id="user" minlength="3" maxlength="16">
+    </p>
+    <p>
+        <label for="user">Status</label>
+        <select name="user" id="user">
+            <option value="Inativo">Inativo</option>
+            <option value="Ativo">Ativo</option>
+        </select>
+    </p>
+        <p>Tipo:</p>
+
+        <label for="op">Técnico</label>
+        <input type="radio" name="op" id="op">
+        <label for="op">Professor</label>
+        <input type="radio" name="op" id="op">
+        <label for="op">Aluno</label>
+        <input type="radio" name="op" id="op">
+        <p>
+            <label for="user">Data de criação</label>
+            <input type="text" name="user" id="user">
+        </p>
+        <p>Perfil:</p>
+
+        <label for="op">Convidado</label>
+        <input type="radio" name="op" id="op">
+        <label for="op">Administrador</label>
+        <input type="radio" name="op" id="op">
+
+        <p>
+            <label for="icomentario">Observações:</label>
+            <p>
+                <textarea name="message" rows="10" cols="30">
+                </textarea>
+            </p>
+        </p>
+        <p>Módulos:</p>
+        <label for="op">Compras</label>
+        <input type="checkbox" name="op" id="op">
+        <label for="op">Biblioteca</label>
+        <input type="checkbox" name="op" id="op">
+        <label for="op">Acadêmico</label>
+        <input type="checkbox" name="op" id="op">
+        <label for="op">Documentação</label>
+        <input type="checkbox" name="op" id="op">
+        <label for="op">Recursos Humanos</label>
+        <input type="checkbox" name="op" id="op">
+        
+        <p>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Excluir</button>
+        </p>
+
+    
+    
+       
+</body>
+</html>
